@@ -1,0 +1,19 @@
+{
+  "split": "test",
+  "regression": {
+    "mae": 25.19,
+    "rmse": 47.64,
+    "mape_pct": 14.01,
+    "r2": 0.9855
+  },
+  "classification": {
+    "accuracy": 0.9145,
+    "macro_f1": 0.841,
+    "per_class_f1": {
+      "low": 0.9606,
+      "moderate": 0.7997,
+      "high": 0.7914,
+      "severe": 0.8125
+    }
+  }
+}

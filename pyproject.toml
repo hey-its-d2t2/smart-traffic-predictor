@@ -1,0 +1,40 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "smart-traffic-predictor"
+version = "0.1.0"
+description = "AI-Based Smart Traffic Prediction System"
+authors = [{ name = "Deepak Singh", email = "todeepaksingh.com@gmail.com" }]
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "fastapi>=0.104.0,<0.120",
+    "uvicorn>=0.24.0,<0.35",
+    "pydantic>=2.5.0,<3.0",
+    "pydantic-settings>=2.1.0,<3.0",
+    "scikit-learn>=1.3.2,<2.0",
+    "numpy>=1.24.0,<3.0",
+    "polars>=1.0.0,<3.0",
+    "loguru>=0.7.2,<1.0",
+    "joblib>=1.3.2,<2.0",
+    "matplotlib>=3.8.0,<4.0",
+    "seaborn>=0.13.0,<1.0",
+    "httpx>=0.25.0,<1.0",
+    "scipy>=1.11.0,<2.0",
+]
+
+[dependency-groups]
+dev = [
+    "pytest>=7.4.0",
+    "pytest-asyncio>=0.23.0",
+    "pytest-cov>=4.1.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"

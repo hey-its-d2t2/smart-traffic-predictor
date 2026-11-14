@@ -1,0 +1,19 @@
+{
+  "split": "validation",
+  "regression": {
+    "mae": 23.66,
+    "rmse": 43.99,
+    "mape_pct": 13.32,
+    "r2": 0.9875
+  },
+  "classification": {
+    "accuracy": 0.917,
+    "macro_f1": 0.848,
+    "per_class_f1": {
+      "low": 0.9615,
+      "moderate": 0.792,
+      "high": 0.8,
+      "severe": 0.8385
+    }
+  }
+}
