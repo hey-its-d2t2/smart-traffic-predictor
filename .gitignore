@@ -31,3 +31,20 @@ Thumbs.db
 .pytest_cache/
 .coverage
 htmlcov/
+
+# Trained models (run scripts/train.py to generate)
+models/saved/*.pkl
+models/saved/*.pt
+models/saved/*.bin
+!models/saved/.gitkeep
+
+# Generated data
+data/processed/*.csv
+data/processed/*.parquet
+data/raw/*.csv
+data/raw/*.json
+
+# Build
+dist/
+build/
+*.egg-info/
